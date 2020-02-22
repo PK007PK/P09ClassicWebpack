@@ -1,5 +1,7 @@
 .u-container {
   /**** Overwrite default variables and custom projekt stylling ****/
+  $max-width-xxl: 1230px;
+  $max-width-lg: 1230px;
 
   /**** Default properties ****/
   $grid-base: 10px !default;

@@ -14,8 +14,8 @@
   $icon-background: red !default;
   $icon-size: 12px !default;
 
-  $heading-weight: $font-weight-400 !default;
-  $text-weight: $font-weight-300 !default;
+  $heading-weight: bold !default;
+  $text-weight: normal !default;
 
   //Component body
   // position: relative;
@@ -47,7 +47,7 @@
   &__date {
     display: inline-block;
     margin: $grid-base 0;
-    font-weight: $font-weight-200;
+    // font-weight: $font-weight-200;
     color: $color-gray;
   }
 

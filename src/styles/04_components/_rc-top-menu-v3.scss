@@ -1,0 +1,71 @@
+.c-top-menu {
+  // * Overwrite default values
+
+  // * Default main variables
+  $grid-base: 10px !default;
+  $top-menu--body--height: 40px !default;
+
+  //* Component
+  display: flex;
+  height: $top-menu--body--height;
+  justify-content: space-between;
+  align-items: center;
+
+  &__container {
+    display: none;
+
+    @include respond-above(md) {
+      display: flex;
+    }
+  }
+
+  &__mobile-menu {
+    display: block;
+
+    @include respond-above(md) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    @extend .u-txt-logo;
+  }
+
+  &__item {
+    @extend .u-txt-navigation;
+    padding: $grid-base;
+
+    &:last-of-type {
+      margin-right: -$grid-base;
+    }
+  }
+
+  &__nav-link {
+    cursor: pointer;
+  }
+}
+
+/*
+
+<nav class="c-top-menu">
+  <div class="c-top-menu__logo">
+    <a hreff="#" class="c-top-menu__nav-link u-txt-logo">MariaAnna</a>
+  </div>
+  <ul class="c-top-menu__container">
+    <li class="c-top-menu__item">
+      <a hreff="#" class="c-top-menu__nav-link">About Me</a>
+    </li>
+    <li class="c-top-menu__item">
+      <a hreff="#" class="c-top-menu__nav-link">Works</a>
+    </li>
+    <li class="c-top-menu__item">
+      <a hreff="#" class="c-top-menu__nav-link">Contact Me</a>
+    </li>
+    <li class="c-top-menu__item">
+      <a hreff="#" class="c-top-menu__nav-link">Follow Me</a>
+    </li>
+  </ul>
+  <div class="c-top-menu__mobile-menu">X</div>
+</nav>
+
+*/

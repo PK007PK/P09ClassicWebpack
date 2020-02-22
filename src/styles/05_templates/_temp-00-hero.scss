@@ -1,0 +1,44 @@
+.temp-00-hero {
+  @include respond-above(sm) {
+    margin-top: 25px;
+  }
+
+  &__inner {
+    @include resp-background(
+      $phone-9x16: 'images/images/temp-00-back--phone-9x16.jpg',
+      $phone-9x16-hi: 'images/images/temp-00-back--phone-9x16-hi.jpg',
+      $phone-9x21: 'images/images/temp-00-back--phone-9x21.jpg',
+      $phone-9x21-hi: 'images/images/temp-00-back--phone-9x21-hi.jpg',
+      $tablet-3x4: 'images/images/temp-00-back--tablet-3x4.jpg',
+      $tablet-3x4-hi: 'images/images/temp-00-back--tablet-3x4.jpg',
+      $tablet-2x3: 'images/images/temp-00-back--tablet-2x3.jpg',
+      $tablet-2x3-hi: 'images/images/temp-00-back--tablet-2x3.jpg',
+      $desktop16x9: 'images/images/temp-00-back--desktop-16x9.jpg',
+      $desktop16x9-hi: 'images/images/temp-00-back--desktop-16x9.jpg'
+    );
+    @include resp-section-padding();
+    @include section-100vh-height();
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__maria {
+    font-size: $font-size-25;
+    font-weight: 500;
+    line-height: 1;
+    span {
+      font-size: $font-size-18;
+      font-weight: 400;
+      line-height: 1;
+    }
+  }
+
+  &__txt {
+    font-family: $primary-font;
+    font-size: $font-size-48;
+  }
+}

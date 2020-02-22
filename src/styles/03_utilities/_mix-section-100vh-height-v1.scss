@@ -20,16 +20,16 @@ $default-section-max-height: 800px !default;
 
   @include respond-between(md, lg) {
     height: 100vh;
-    max-height: 1050px;
+    max-height: 660px; //!
   }
 
   @include respond-between(lg, xxl) {
     height: 100vh;
-    max-height: 900px;
+    max-height: 600px; //!
   }
 
   @include respond-above(xxl) {
     height: 100vh;
-    max-height: 900px;
+    max-height: 600px; //!
   }
 }

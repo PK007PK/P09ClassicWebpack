@@ -1,54 +1,141 @@
 /**** Specific project values ****/
-@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500&display=swap');
+// font-family: 'Playfair Display', serif;
+// font-family: 'Raleway', sans-serif;
 
-//Body font
-$main-font: ('Roboto', sans-serif);
+$primary-font: ('Playfair Display', serif);
+$secondary-font: ('Raleway', sans-serif);
+$tertiary-font: ('Dancing Script', cursive);
 
 //Font sizes
-$font-size-small: 1.4rem;
+$font-size-13: 1.3rem;
+$font-size-14: 1.4rem;
 $font-size-16: 1.6rem;
-$font-size-24: 2.4rem;
-$font-size-36: 3.6rem;
-$font-size-46: 4.6rem;
-
-// Body font size
-$font-size-base: $font-size-16;
+$font-size-18: 1.8rem;
+$font-size-25: 2.5rem;
+$font-size-48: 4.8rem;
 
 // Create font-size classes
 $font-sizes: (
-  'font-size-small': $font-size-small,
+  'font-size-13': $font-size-13,
+  'font-size-14': $font-size-14,
   'font-size-16': $font-size-16,
-  'font-size-24': $font-size-24,
-  'font-size-36': $font-size-36,
-  'font-size-46': $font-size-46,
+  'font-size-18': $font-size-18,
+  'font-size-25': $font-size-25,
+  'font-size-48': $font-size-48,
 );
 
 //Font weights
-$font-weight-200: 200;
 $font-weight-300: 300;
 $font-weight-400: 400;
 $font-weight-500: 500;
 
-// Body font weight
-$font-weight-base: $font-weight-400;
-
 // Create font-weight classes
 $font-weights: (
-  'font-weight-200': $font-weight-200,
   'font-weight-300': $font-weight-300,
   'font-weight-400': $font-weight-400,
   'font-weight-500': $font-weight-500,
 );
 
+// * Overwrite generic variables
+// ** Body
+// $body--text--font-size: 1.6rem;
+// $body--text--font-weight: 400;
+// $body--text--font-family: $secondary-font;
+
 // ** Headings
-// $h1-font-size:
-// $h2-font-size:
-// $h3-font-size:
-// $h4-font-size:
-// $h1-font-weight:
-// $h2-font-weight:
-// $h3-font-weight:
-// $h4-font-weight:
+$headings--h1--font-family: $tertiary-font;
+$headings--h1--line-height: 1.2;
+// $headings--h1--font-size: 2.5rem;
+// $headings--h1--font-weight: bold;
+// $headings--h1--letter-spacing: inherit;
+$headings--h1--font-style: italic;
+// $headings--h1--text-align: inherit;
+// $headings--h1--text-transform: inherit;
+
+$headings--h2--font-family: $primary-font;
+// $headings--h2--line-height: 1.5;
+// $headings--h2--font-size: 2.2rem;
+// $headings--h2--font-weight: bold;
+// $headings--h2--letter-spacing: inherit;
+// $headings--h2--font-style: normal;
+// $headings--h2--text-align: inherit;
+$headings--h2--text-transform: uppercase;
+
+// $headings--h3--font-family: $primary-font;
+// $headings--h3--line-height: 1.5;
+// $headings--h3--font-size: 2rem;
+// $headings--h3--font-weight: bold;
+// $headings--h3--letter-spacing: inherit;
+// $headings--h3--font-style: normal;
+// $headings--h3--text-align: inherit;
+// $headings--h3--text-transform: inherit;
+
+// $headings--h4--font-family: $primary-font;
+// $headings--h4--line-height: 1.5;
+// $headings--h4--font-size: 1.8rem;
+// $headings--h4--letter-spacing: inherit;
+// $headings--h4--font-weight: bold;
+// $headings--h4--font-style: normal;
+// $headings--h4--text-align: inherit;
+// $headings--h4--text-transform: inherit;
+
+// ** paragraph (p and u-txt-paragraph--primary);
+$text--p--font-family: $secondary-font;
+$text--p--font-size: 16px;
+// $text--p--font-style: inherit;
+// $text--p--font-weight: inherit;
+// $text--p--letter-spacing: inherit;
+$text--p--line-height: 1.5;
+// $text--p--text-align: inherit;
+// $text--p--text-transform: inherit;
+
+// * Overwrite utilities
+
+// ** u-txt-component
+// $txt-component--text--font-family: inherit;
+// $txt-component--text--font-size: inherit;
+// $txt-component--text--font-style: inherit;
+// $txt-component--text--font-weight: inherit;
+// $txt-component--text--letter-spacing: inherit;
+// $txt-component--text--line-height: inherit;
+// $txt-component--text--text-align: inherit;
+// $txt-component--text--text-transform: inherit;
+
+// ** u-txt-logo
+$txt-logo--text--font-family: $tertiary-font;
+$txt-logo--text--font-size: 20px;
+// $txt-logo--text--font-style: inherit;
+$txt-logo--text--font-weight: 600;
+// $txt-logo--text--letter-spacing: inherit;
+// $txt-logo--text--line-height: inherit;
+// $txt-logo--text--text-align: inherit;
+// $txt-logo--text--text-transform: inherit;
+
+// ** u-txt-navigation
+$txt-navigation--text--color: $primary-font;
+// $txt-navigation--text--font-family: inherit;
+$txt-navigation--text--font-size: $font-size-14;
+// $txt-navigation--text--font-style: inherit;
+// $txt-navigation--text--font-weight: inherit;
+// $txt-navigation--text--letter-spacing: inherit;
+// $txt-navigation--text--line-height: inherit;
+// $txt-navigation--text--text-align: inherit;
+$txt-navigation--text--text-transform: uppercase;
+
+// ** u-txt-paragraph--primary like generic p.
+
+// ** u-txt-paragraph--secondary
+// $txt-paragraph--sec--color: inherit;
+// $txt-paragraph--sec--font-family: inherit;
+// $txt-paragraph--sec--font-size: inherit;
+// $txt-paragraph--sec--font-style: inherit;
+// $txt-paragraph--sec--font-weight: inherit;
+// $txt-paragraph--sec--letter-spacing: inherit;
+// $txt-paragraph--sec--line-height: inherit;
+// $txt-paragraph--sec--text-align: inherit;
+// $txt-paragraph--sec--text-transform: inherit;
+
+// * Overwrite components
 
 // ** c-blog-entry
 // $blog-entry--title--font-size: $grid-base * 2;
@@ -64,3 +151,16 @@ $font-weights: (
 
 // ** c-icon
 // $icon--image--font-size: 2.5rem !default;
+
+// ** c-side-contact
+// $side-contact--font-size: 14px !default;
+// $side-contact--font-weight: normal !default;
+// $side-contact--icon-size: $grid-base * 2 !default;
+
+// ** c-side-menu
+// $side-menu--text--font-weight: normal !default;
+// $side-menu--icon--size: $grid-base * 2 !default;
+
+// ** c-social-tile
+// $social-tile--icon--size: $grid-base * 3 !default;
+// $social-tile--counter--font-weight: bold !default;

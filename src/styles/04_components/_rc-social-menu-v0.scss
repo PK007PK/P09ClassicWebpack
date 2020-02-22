@@ -1,7 +1,5 @@
 .c-social-menu {
   //Overwrite variables
-  $icon-background-color: $color-gray;
-  $text-color: $color-grayBlack;
 
   //Default variables
   $grid-base: 10px !default;
@@ -33,26 +31,6 @@
     justify-content: center;
     border-radius: 100px;
     position: relative;
-
-    &:hover.darkBlue {
-      background-color: $color-darkBlue;
-    }
-
-    &:hover.lightBlue {
-      background-color: $color-lightBlue;
-    }
-
-    &:hover.red {
-      background-color: $color-gplus;
-    }
-
-    &:hover.orange {
-      background-color: orange;
-    }
-
-    &:hover.darkRed {
-      background-color: #720606;
-    }
   }
 
   a {

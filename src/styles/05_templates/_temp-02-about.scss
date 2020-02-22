@@ -1,0 +1,11 @@
+.temp-02-about {
+  &__inner {
+    @include resp-section-padding();
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
