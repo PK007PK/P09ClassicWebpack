@@ -1,0 +1,23 @@
+.temp-08-footer {
+  &__inner {
+    @extend .u-flex-center;
+  }
+
+  i {
+    transform: rotate(-90deg);
+  }
+
+  &__maria {
+    font-size: $font-size-25;
+    font-weight: 500;
+    line-height: 1;
+    font-family: $tertiary-font;
+    text-align: center;
+
+    span {
+      font-size: $font-size-18;
+      font-weight: 400;
+      line-height: 1;
+    }
+  }
+}

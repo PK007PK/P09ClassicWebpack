@@ -1,0 +1,30 @@
+.c-tile-A1 {
+  // @extend .u-fx-hover-zoom;
+  color: white;
+  padding: $grid-base;
+
+  border: 5px solid white;
+
+  &__inner {
+    @extend .u-text-shadow1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__heading {
+    @extend .u-heading--2;
+  }
+
+  &__bar {
+    width: 120px;
+    height: 2px;
+    background-color: white;
+    margin: 5px 0 8px;
+  }
+
+  &__subheading {
+  }
+}

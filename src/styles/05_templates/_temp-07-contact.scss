@@ -1,0 +1,27 @@
+.temp-07-contact {
+  &__inner {
+    @include resp-section-padding();
+    @include resp-background(
+      $phone-9x16: 'images/images/temp-07-back--phone.jpg',
+      $phone-9x16-hi: 'images/images/temp-07-back--phone.jpg',
+      $phone-9x21: 'images/images/temp-07-back--phone.jpg',
+      $phone-9x21-hi: 'images/images/temp-07-back--phone.jpg',
+      $tablet-3x4: 'images/images/temp-07-back--tablet.jpg',
+      $tablet-3x4-hi: 'images/images/temp-07-back--tablet.jpg',
+      $tablet-2x3: 'images/images/temp-07-back--tablet.jpg',
+      $tablet-2x3-hi: 'images/images/temp-07-back--tablet.jpg',
+      $desktop16x9: 'images/images/temp-07-back--desktop.jpg',
+      $desktop16x9-hi: 'images/images/temp-07-back--desktop.jpg'
+    );
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    @include respond-above(sm) {
+      height: 695px;
+    }
+  }
+}

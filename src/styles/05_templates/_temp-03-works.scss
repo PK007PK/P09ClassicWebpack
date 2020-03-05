@@ -1,0 +1,167 @@
+.temp-03-works {
+  .c-tile-A1 {
+    @extend .u-box-shadow2;
+    @extend .u-fx-focus;
+    @extend .u-fx-hover-zoom;
+  }
+
+  position: relative;
+  &__inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__gallery {
+    @mixin add-background($phone-1x, $phone-2x, $other-1x, $other-2x) {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @include respond-below(xs) {
+        @media (max-resolution: 2.99dppx) {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(255, 255, 255, 0.1),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url($phone-1x);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(255, 255, 255, 0.1),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url($phone-2x);
+        }
+      }
+      @include respond-above(xs) {
+        @media (max-resolution: 2.99dppx) {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(255, 255, 255, 0.1),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url($other-1x);
+        }
+
+        @media (min-resolution: 3dppx) {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(255, 255, 255, 0.1),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url($other-2x);
+        }
+      }
+    }
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 260px);
+    grid-gap: $grid-base * 2.5;
+    grid-template-areas:
+      'nature'
+      'urban'
+      'people'
+      'wedding'
+      'architecture'
+      'animals';
+
+    @include respond-above(sm) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 260px 260px 260px;
+      grid-gap: $grid-base * 2.5;
+      grid-template-areas:
+        'nature nature urban'
+        'people wedding urban'
+        'architecture architecture animals';
+    }
+
+    @include respond-above(md) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 260px 260px 260px;
+      grid-gap: $grid-base * 2.5;
+      grid-template-areas:
+        'nature nature urban'
+        'people wedding urban'
+        'architecture architecture animals';
+    }
+
+    &--nature {
+      grid-area: nature;
+      &::before {
+        @include add-background(
+          $phone-1x: 'images/images/temp-03-back--nature-phone1x.jpg',
+          $phone-2x: 'images/images/temp-03-back--nature-phone2x.jpg',
+          $other-1x: 'images/images/temp-03-back--nature-desk1x.jpg',
+          $other-2x: 'images/images/temp-03-back--nature-desk2x.jpg'
+        );
+      }
+    }
+
+    &--urban {
+      grid-area: urban;
+      &::before {
+        @include add-background(
+          $phone-1x: 'images/images/temp-03-back--urban-desk1x.jpg',
+          $phone-2x: 'images/images/temp-03-back--urban-desk2x.jpg',
+          $other-1x: 'images/images/temp-03-back--urban-desk1x.jpg',
+          $other-2x: 'images/images/temp-03-back--urban-desk2x.jpg'
+        );
+      }
+    }
+
+    &--people {
+      grid-area: people;
+      &::before {
+        @include add-background(
+          $phone-1x: 'images/images/temp-03-back--people-phone1x.jpg',
+          $phone-2x: 'images/images/temp-03-back--people-phone2x.jpg',
+          $other-1x: 'images/images/temp-03-back--people-phone1x.jpg',
+          $other-2x: 'images/images/temp-03-back--people-phone2x.jpg'
+        );
+      }
+    }
+
+    &--wedding {
+      grid-area: wedding;
+      &::before {
+        @include add-background(
+          $phone-1x: 'images/images/temp-03-back--wedding-phone1x.jpg',
+          $phone-2x: 'images/images/temp-03-back--wedding-phone2x.jpg',
+          $other-1x: 'images/images/temp-03-back--wedding-phone1x.jpg',
+          $other-2x: 'images/images/temp-03-back--wedding-phone2x.jpg'
+        );
+      }
+    }
+
+    &--architecture {
+      grid-area: architecture;
+      &::before {
+        @include add-background(
+          $phone-1x: 'images/images/temp-03-back--architecture-phone1x.jpg',
+          $phone-2x: 'images/images/temp-03-back--architecture-phone2x.jpg',
+          $other-1x: 'images/images/temp-03-back--architecture-desk1x.jpg',
+          $other-2x: 'images/images/temp-03-back--architecture-desk2x.jpg'
+        );
+      }
+    }
+
+    &--animals {
+      grid-area: animals;
+      &::before {
+        @include add-background(
+          $phone-1x: 'images/images/temp-03-back--animals-phone1x.jpg',
+          $phone-2x: 'images/images/temp-03-back--animals-phone2x.jpg',
+          $other-1x: 'images/images/temp-03-back--animals-phone1x.jpg',
+          $other-2x: 'images/images/temp-03-back--animals-phone2x.jpg'
+        );
+      }
+    }
+  }
+}

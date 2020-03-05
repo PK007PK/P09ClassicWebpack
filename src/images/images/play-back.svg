@@ -1,0 +1,6 @@
+<svg width="92" height="62" viewBox="0 0 92 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 21V1H21" stroke="black"/>
+<path d="M71 1H91V21" stroke="black"/>
+<path d="M91 41V61H71" stroke="black"/>
+<path d="M21 61H1V41" stroke="black"/>
+</svg>

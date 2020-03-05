@@ -4,7 +4,7 @@
   "name": "site_boilerplate_classic_webpack",
   "version": "1.0.0",
   "description": "Training site",
-  "homepage": "https://pk007pk.github.io/site_boilerplate_classic_webpack/",
+  "homepage": "https://pk007pk.github.io/P09ClassicWebpack/",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
@@ -49,6 +49,7 @@
     "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "lazysizes": "^5.1.2",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.14.3",

@@ -1,26 +1,38 @@
 .c-input {
   //Overwrite variables:
+  $input--placeholder--color: $color-gray;
+  $input--background--color: white;
+  $input--border--color: $color-red;
+  $input--placeholder--text-size: 12px;
+  $input--placeholder--text-color: lighten($color-gray, 25);
+  $input--placeholder--text-weight: 200;
+  $input--body--max-width: 585px;
 
   //Default main variables:
   $input--placeholder--color: white !default;
+  $input--placeholder--text-size: inherit !default;
+  $input--placeholder--text-color: inherit !default;
+  $input--placeholder--text-weight: inherit !default;
   $input--background--color: black !default;
   $input--border--color: black !default;
+  $input--body--max-width: 500px !default;
 
   //Default local variables:
 
   //Component body:
   background-color: $input--background--color;
-  border: 1px solid $input--border--color;
-
+  border: 0.5px solid $input--border--color;
+  max-width: $input--body--max-width;
   width: 100%;
-  max-width: 400px;
-  margin: 0;
   display: block;
   padding: 5px 10px;
   line-height: 1.5;
 
   &::placeholder {
     color: $input--placeholder--color;
+    font-size: $input--placeholder--text-size;
+    color: $input--placeholder--text-color;
+    font-weight: $input--placeholder--text-weight;
   }
 
   &:focus::placeholder {

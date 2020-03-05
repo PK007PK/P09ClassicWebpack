@@ -19,6 +19,7 @@
 
   //Component body
   display: block;
+  flex-shrink: 0;
   width: 100%;
   max-width: $horizontal-bar--body--max-width;
   height: $horizontal-bar--body--height;

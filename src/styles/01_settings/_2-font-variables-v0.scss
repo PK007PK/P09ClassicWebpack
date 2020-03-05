@@ -83,7 +83,7 @@ $headings--h2--text-transform: uppercase;
 $text--p--font-family: $secondary-font;
 $text--p--font-size: 16px;
 // $text--p--font-style: inherit;
-// $text--p--font-weight: inherit;
+$text--p--font-weight: 200;
 // $text--p--letter-spacing: inherit;
 $text--p--line-height: 1.5;
 // $text--p--text-align: inherit;
@@ -144,8 +144,8 @@ $txt-navigation--text--text-transform: uppercase;
 // $blog-entry--text--font-weight: normal;
 
 // ** c-btn
-// $btn--text--font-size: 2rem;
-// $btn--text--font-weight: normal
+$btn--text--font-size: $font-size-14;
+$btn--text--font-weight: 200;
 // $small-btn--text--font-size: 1.5rem;
 // $small-btn--text--font-weight: normal
 

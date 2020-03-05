@@ -18,7 +18,7 @@ module.exports = ctx => {
               fontFace: true,
               css: ['style.[contentHash].css'],
               defaultExtractor: content => content.match(/[A-z0-9-:/]+/g),
-              ignore: ['src/styles/carousel/'],
+              ignore: ['src/styles/carousel/', 'video-is-open'],
             }),
           ]
         : []),

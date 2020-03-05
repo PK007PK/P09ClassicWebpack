@@ -1,4 +1,5 @@
-.temp-02-about {
+.temp-04-carousel {
+  position: relative;
   &__inner {
     @include resp-section-padding();
     @include resp-section-height();
@@ -8,18 +9,11 @@
     align-items: center;
     justify-content: center;
   }
-}
 
-.width-md-50 {
-  @include respond-above(md) {
-    width: 50%;
-    display: block;
-  }
-}
-
-.width-lg-80 {
-  @include respond-above(lg) {
-    width: 80%;
-    display: block;
+  .glide {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
   }
 }

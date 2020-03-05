@@ -1,0 +1,41 @@
+/**** Overwrite default variables and custom projekt stylling ****/
+
+/**** Default properties ****/
+$mix-section-height--default-tiny--height: 100vh !default;
+$mix-section-height--default-xs--height: 400px !default;
+$mix-section-height--default-sm--height: $mix-section-height--default-xs--height !default;
+$mix-section-height--default-md--height: $mix-section-height--default-sm--height !default;
+$mix-section-height--default-lg--height: 450px !default;
+$mix-section-height--default-xxl--height: 400px !default;
+
+/**** Core component ****/
+@mixin resp-section-height(
+  $tiny-height: $mix-section-height--default-tiny--height,
+  $xs-height: $mix-section-height--default-xs--height,
+  $sm-height: $mix-section-height--default-sm--height,
+  $md-height: $mix-section-height--default-md--height,
+  $lg-height: $mix-section-height--default-lg--height,
+  $xxl-height: $mix-section-height--default-xxl--height
+) {
+  height: $tiny-height;
+
+  @include respond-above(xs) {
+    height: $xs-height;
+  }
+
+  @include respond-above(sm) {
+    height: $sm-height;
+  }
+
+  @include respond-above(md) {
+    height: $md-height;
+  }
+
+  @include respond-above(lg) {
+    height: $lg-height;
+  }
+
+  @include respond-above(xxl) {
+    height: $xxl-height;
+  }
+}

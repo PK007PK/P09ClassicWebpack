@@ -1,0 +1,70 @@
+.c-play-video {
+  //Overwrite variables:
+  $play-video--sign--color: $color-gray;
+  $play-video--icon--text-color: $color-gray;
+  $play-video--icon--text-color-hover: $color-red;
+  $play-video--sign--color-hover: $color-red;
+  //Default main variables:
+  $play-video--boby--height: 120px !default;
+  $play-video--boby--width: 120px !default;
+  $play-video--icon--font-size: 30px !default;
+  $play-video--icon--background-height: 60px !default;
+  $play-video--icon--background-width: 90px !default;
+  $play-video--icon--text-color: inherit !default;
+  $play-video--icon--text-color-hover: red !default;
+  $play-video--sign--font-size: 12px !default;
+  $play-video--sign--color: inherit !default;
+  $play-video--sign--color-hover: red !default;
+
+  //Default local variables:
+  $play-video--icon-sign--distance: 20px !default;
+
+  //Component body:
+  @include transition;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: $play-video--boby--height;
+  width: $play-video--boby--width;
+
+  &:hover &__icon {
+    color: $play-video--icon--text-color-hover;
+    width: $play-video--icon--background-width + 3;
+    height: $play-video--icon--background-height + 3;
+    font-size: $play-video--icon--font-size + 10;
+  }
+
+  &:hover &__sign {
+    color: $play-video--sign--color-hover;
+  }
+
+  &__icon {
+    font-size: $play-video--icon--font-size;
+    color: $play-video--icon--text-color;
+    width: $play-video--icon--background-width;
+    height: $play-video--icon--background-height;
+    @extend .u-flex-center;
+    background-image: url('images/images/play-back.svg');
+    background-size: cover;
+  }
+
+  &__sign {
+    margin-top: $play-video--icon-sign--distance;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $play-video--sign--font-size;
+    color: $play-video--sign--color;
+  }
+}
+
+/* 
+
+<button class="c-play-video">
+    <i class="c-play-video__icon icon-right-open-big"></i>
+    <span class="c-play-video__sign">Watch my video</span>
+</button>
+
+*/
