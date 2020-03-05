@@ -42,6 +42,13 @@
 
   &__nav-link {
     cursor: pointer;
+
+    &:focus {
+      outline: 0 solid $color-red;
+      outline: none !important;
+      background-color: $color-red;
+      color: white;
+    }
   }
 }
 

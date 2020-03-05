@@ -1,7 +1,7 @@
-import SmScrollFunct from "../StaticItemSmoothScroll/StaticItemSmoothScroll";
+import SmScrollFunct from '../StaticItemSmoothScroll/StaticItemSmoothScroll';
 
 // Main variables:
-const menuQuery = ".c-menu a";
+const menuQuery = '.c-top-menu a';
 
 //Higher order functions
 function curry(fn) {
@@ -16,13 +16,13 @@ function selectItems(query) {
 }
 
 function getId({ href }) {
-  return href.split("/#").pop();
+  return href.split('/#').pop();
 }
 
 function AddSmScrollToArray(array) {
   for (const item of array) {
     const targetId = getId(item);
-    item.addEventListener("click", () => SmScrollFunct(targetId, 1000));
+    item.addEventListener('click', () => SmScrollFunct(targetId, 1000));
   }
 }
 

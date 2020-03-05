@@ -5,7 +5,7 @@ import BackgroundLazyLoad from './BackgroundLazyLoad/BackgroundLazyLoad';
 import Glide from '@glidejs/glide';
 
 HandleBurgerMenu();
-AddSmScrollToMainMenu();
+// AddSmScrollToMainMenu();
 BackgroundLazyLoad();
 
 new Glide('.glide').mount();

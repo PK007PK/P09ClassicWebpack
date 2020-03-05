@@ -18,7 +18,13 @@ module.exports = ctx => {
               fontFace: true,
               css: ['style.[contentHash].css'],
               defaultExtractor: content => content.match(/[A-z0-9-:/]+/g),
-              ignore: ['src/styles/carousel/', 'video-is-open'],
+              ignore: [
+                'src/styles/carousel/',
+                'src/styles/04_components/_rc-hamburgerMenu-v0.scss',
+                'hamburger--active',
+                'navigation--active',
+              ],
+              whitelist: ['hamburger--active', 'navigation--active'],
             }),
           ]
         : []),
